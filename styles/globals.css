@@ -1,0 +1,16 @@
+@import "./background.css";
+
+:root {
+    --color_1: #1a1a1a;
+    --color_2: #2e2e2e;
+    --color_3: #4d4d4d;
+    --color_4: #08002e;
+    --color_5: #12006e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
