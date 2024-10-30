@@ -1,5 +1,6 @@
 @import "./background.css";
 @import "./app.css";
+@import "./modal.css";
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Nerko+One&display=swap');
 
 :root {
@@ -34,12 +35,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Mukta", sans-serif;
+   
+
 }
 
 body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    cursor: url("../assets/cursor_auto.png") 10 10, auto;
+
 }
 
 body,

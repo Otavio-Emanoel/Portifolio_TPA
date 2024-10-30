@@ -1,0 +1,71 @@
+#modal_bim1_ex1 {
+    position: fixed;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 90vh;
+    overflow-y: scroll;
+    z-index: 6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #000000b4;
+    padding: 20px;
+    background-color: var(--color-charcoal-gray);
+    gap: 30px;
+    transition: 0.5s;
+}
+
+#modal_bim1_ex1 input {
+    background-color: transparent;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px 5px #000000b4;
+    border: 3px solid var(--color-powder-blue);
+    text-align: end;
+    color: var(--color-powder-blue);
+    font-size: 25px;
+}
+#modal_bim1_ex1 input::-webkit-outer-spin-button,
+#modal_bim1_ex1 input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 10px;
+}
+
+#modal_bim1_ex1 h2{
+    width: 85%;
+    color: var(--color-powder-blue);
+    text-align: center;
+}
+#modal_bim1_ex1 div {
+    display: flex;
+    gap: 30px;
+}
+#bim1_ex1_see,
+#bim1_ex1_close {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid var(--color-powder-blue);
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    box-shadow: 6px 6px 10px 5px #000000b4;
+}
+
+#bim1_ex1_see:hover,
+#bim1_ex1_close:hover{
+    transition: 0.5s;
+    border-radius: 40px;
+}
+
+#bim1_ex1_close{
+    background-color: #740000d4;
+}
+#bim1_ex1_close:hover {
+    background-color: #da0000;
+
+}
