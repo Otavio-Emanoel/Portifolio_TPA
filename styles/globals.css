@@ -1,4 +1,6 @@
 @import "./background.css";
+@import "./app.css";
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Nerko+One&display=swap');
 
 :root {
     --color_1: #1a1a1a;
@@ -6,11 +8,59 @@
     --color_3: #4d4d4d;
     --color_4: #08002e;
     --color_5: #12006e;
+    --color_text: #fafafa;
+    --color-white: #FFFFFF;
+    --color-light-gray: #F5F5F5;
+    --color-grayish-white: #EAEAEA;
+    --color-very-light-gray: #DCDCDC;
+    --color-black: #000000;
+    --color-dark-gray: #1C1C1C;
+    --color-charcoal-gray: #333333;
+    --color-soft-black: #4F4F4F;
+    --color-light-blue: #ADD8E6;
+    --color-powder-blue: #B0E0E6;
+    --color-sky-blue: #87CEEB;
+    --color-steel-blue: #4682B4;
+    --color-royal-blue: #4169E1;
+    --color-dark-blue: #00008B;
+    --color-navy-blue: #000080;
+    --color-muted-gray: #A9A9A9;
+    --color-light-steel-blue: #B0C4DE;
+    --color-slate-gray: #708090;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body,
+p,
+h1,
+a,
+button {
+    color: var(--color_text);
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background-image: linear-gradient(1deg, var(--color_1), var(--color_2), var(--color_1));
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color_3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--color_1),
+        0 0 20px var(--color_1);
+}
