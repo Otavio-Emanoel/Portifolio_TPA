@@ -74,3 +74,59 @@ exercicio_2_bim1_start.addEventListener('click', () => {
     Multiplicação: ${mult} <br>
     Média: ${media}`
 });
+
+// Exercicio 3
+
+const exercicio_3_bim1 = document.getElementById("modal_bim1_ex3");
+const exercicio_3_bim1_open = document.getElementById("atividade_3_bim_1");
+const exercicio_3_bim1_close = document.getElementById("bim1_ex3_close");
+
+exercicio_3_bim1_close.addEventListener("click", () => {
+    exercicio_3_bim1.style.opacity = "0";
+    setTimeout(() => {
+        exercicio_3_bim1.style.display = "none";
+    }, 1000);
+});
+
+exercicio_3_bim1_open.addEventListener("click", () => {
+    exercicio_3_bim1.style.opacity = "1";
+    exercicio_3_bim1.style.display = "flex";
+});
+
+
+
+// Exercicio 4
+
+const exercicio_4_bim1 = document.getElementById("modal_bim1_ex4");
+const exercicio_4_bim1_open = document.getElementById("atividade_4_bim_1");
+const exercicio_4_bim1_close = document.getElementById("bim1_ex4_close");
+
+exercicio_4_bim1_close.addEventListener("click", () => {
+    exercicio_4_bim1.style.opacity = "0";
+    setTimeout(() => {
+        exercicio_4_bim1.style.display = "none";
+    }, 1000);
+});
+
+exercicio_4_bim1_open.addEventListener("click", () => {
+    exercicio_4_bim1.style.opacity = "1";
+    exercicio_4_bim1.style.display = "flex";
+});
+
+// Exercicio 5
+
+const exercicio_5_bim1 = document.getElementById("modal_bim1_ex5");
+const exercicio_5_bim1_open = document.getElementById("atividade_5_bim_1");
+const exercicio_5_bim1_close = document.getElementById("bim1_ex5_close");
+
+exercicio_5_bim1_close.addEventListener("click", () => {
+    exercicio_5_bim1.style.opacity = "0";
+    setTimeout(() => {
+        exercicio_5_bim1.style.display = "none";
+    }, 1000);
+});
+
+exercicio_5_bim1_open.addEventListener("click", () => {
+    exercicio_5_bim1.style.opacity = "1";
+    exercicio_5_bim1.style.display = "flex";
+});
