@@ -1,4 +1,6 @@
-#modal_bim1_ex1, #modal_bim1_ex2, #modal_bim1_ex3 {
+#modal_bim1_ex1,
+#modal_bim1_ex2,
+#modal_bim1_ex3 {
     position: fixed;
     display: none;
     align-items: center;
@@ -9,7 +11,7 @@
     transform: translate(-50%, -50%);
     width: 900px;
     height: 90vh;
-    overflow-y: auto; 
+    overflow-y: auto;
     z-index: 6;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px #000000b4;
@@ -20,10 +22,11 @@
     overflow-x: hidden;
 }
 
-#modal_bim1_ex1 input, #modal_bim1_ex2 input {
+#modal_bim1_ex1 input,
+#modal_bim1_ex2 input {
     background-color: transparent;
     width: 100%;
-    max-width: 400px; 
+    max-width: 400px;
     height: 40px;
     border-radius: 20px;
     box-shadow: 6px 6px 10px 5px #000000b4;
@@ -42,22 +45,30 @@
     margin: 0;
 }
 
-#modal_bim1_ex1 h2, #modal_bim1_ex2 h2, #modal_bim1_ex3 h2 {
+#modal_bim1_ex1 h2,
+#modal_bim1_ex2 h2,
+#modal_bim1_ex3 h2 {
     width: 85%;
     color: var(--color-powder-blue);
     text-align: center;
-    font-size: 24px; 
+    font-size: 24px;
 }
 
-#modal_bim1_ex1 div, #modal_bim1_ex2 div, #modal_bim1_ex3 div {
+#modal_bim1_ex1 div,
+#modal_bim1_ex2 div,
+#modal_bim1_ex3 div {
     display: flex;
     gap: 30px;
     justify-content: center;
     width: 100%;
 }
 
-#bim1_ex1_see, #bim1_ex2_see, #bim1_ex3_see,
-#bim1_ex1_close, #bim1_ex2_close, #bim1_ex3_close {
+#bim1_ex1_see,
+#bim1_ex2_see,
+#bim1_ex3_see,
+#bim1_ex1_close,
+#bim1_ex2_close,
+#bim1_ex3_close {
     width: 100px;
     height: 50px;
     background-color: transparent;
@@ -66,32 +77,44 @@
     font-size: 20px;
     transition: 0.5s;
     box-shadow: 6px 6px 10px 5px #000000b4;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-#bim1_ex1_see:hover, #bim1_ex2_see:hover, #bim1_ex3_see:hover,
-#bim1_ex1_close:hover, #bim1_ex2_close:hover, #bim1_ex3_close:hover {
+#bim1_ex1_see:hover,
+#bim1_ex2_see:hover,
+#bim1_ex3_see:hover,
+#bim1_ex1_close:hover,
+#bim1_ex2_close:hover,
+#bim1_ex3_close:hover {
     border-radius: 40px;
-    transform: scale(1.1); 
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
-#bim1_ex1_close, #bim1_ex2_close, #bim1_ex3_close {
+#bim1_ex1_close,
+#bim1_ex2_close,
+#bim1_ex3_close {
     background-color: #740000d4;
-    color: white; 
+    color: white;
 }
 
-#bim1_ex1_close:hover, #bim1_ex2_close:hover, #bim1_ex3_close:hover {
+#bim1_ex1_close:hover,
+#bim1_ex2_close:hover,
+#bim1_ex3_close:hover {
     background-color: #da0000;
 }
 
-#bim1_ex1_see, #bim1_ex2_see, #bim1_ex3_see {
+#bim1_ex1_see,
+#bim1_ex2_see,
+#bim1_ex3_see {
     background-color: var(--color-powder-blue);
     color: white;
 }
 
-#bim1_ex1_see:hover, #bim1_ex2_see:hover, #bim1_ex3_see:hover {
-    background-color: #5f9ea0; 
+#bim1_ex1_see:hover,
+#bim1_ex2_see:hover,
+#bim1_ex3_see:hover {
+    background-color: #5f9ea0;
 }
 
 /* Exercicio 4 Bimestre 1 */
@@ -133,7 +156,7 @@
     margin: 10px;
 }
 
-#modal_bim1_ex4 h2{
+#modal_bim1_ex4 h2 {
     width: 85%;
     color: var(--color-powder-blue);
     text-align: center;
@@ -157,16 +180,16 @@
 }
 
 #bim1_ex4_see:hover,
-#bim1_ex4_close:hover{
+#bim1_ex4_close:hover {
     transition: 0.5s;
     border-radius: 40px;
 }
 
-#bim1_ex4_close{
+#bim1_ex4_close {
     background-color: #740000d4;
 }
 
-#bim1_ex4_close:hover  {
+#bim1_ex4_close:hover {
     background-color: #da0000;
 }
 
@@ -209,7 +232,7 @@
     margin: 10px;
 }
 
-#modal_bim1_ex5 h2{
+#modal_bim1_ex5 h2 {
     width: 85%;
     color: var(--color-powder-blue);
     text-align: center;
@@ -233,15 +256,242 @@
 }
 
 #bim1_ex5_see:hover,
-#bim1_ex5_close:hover{
+#bim1_ex5_close:hover {
     transition: 0.5s;
     border-radius: 40px;
 }
 
-#bim1_ex5_close{
+#bim1_ex5_close {
     background-color: #740000d4;
 }
 
-#bim1_ex5_close:hover  {
+#bim1_ex5_close:hover {
+    background-color: #da0000;
+}
+
+/* Exercicio 4 Bimestre 2 */
+#modal_bim2_ex3 {
+    position: fixed;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 90vh;
+    overflow-y: scroll;
+    z-index: 6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #000000b4;
+    padding: 20px;
+    background-color: var(--color-charcoal-gray);
+    gap: 30px;
+    transition: 0.5s;
+}
+
+#modal_bim2_ex3 input {
+    background-color: transparent;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px 5px #000000b4;
+    border: 3px solid var(--color-powder-blue);
+    text-align: end;
+    color: var(--color-powder-blue);
+    font-size: 25px;
+}
+
+#modal_bim2_ex3 input::-webkit-outer-spin-button,
+#modal_bim2_ex3 input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 10px;
+}
+
+#modal_bim2_ex3 h2 {
+    width: 85%;
+    color: var(--color-powder-blue);
+    text-align: center;
+}
+
+#modal_bim2_ex3 div {
+    display: flex;
+    gap: 30px;
+}
+
+#bim2_ex3_see,
+#bim2_ex3_close {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid var(--color-powder-blue);
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    box-shadow: 6px 6px 10px 5px #000000b4;
+}
+
+#bim2_ex3_see:hover,
+#bim2_ex3_close:hover {
+    transition: 0.5s;
+    border-radius: 40px;
+}
+
+#bim2_ex3_close {
+    background-color: #740000d4;
+}
+
+#bim2_ex3_close:hover {
+    background-color: #da0000;
+}
+/* Exercicio 4 Bimestre 2 */
+#modal_bim2_ex4 {
+    position: fixed;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 90vh;
+    overflow-y: scroll;
+    z-index: 6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #000000b4;
+    padding: 20px;
+    background-color: var(--color-charcoal-gray);
+    gap: 30px;
+    transition: 0.5s;
+}
+
+#modal_bim2_ex4 input {
+    background-color: transparent;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px 5px #000000b4;
+    border: 3px solid var(--color-powder-blue);
+    text-align: end;
+    color: var(--color-powder-blue);
+    font-size: 25px;
+}
+
+#modal_bim2_ex4 input::-webkit-outer-spin-button,
+#modal_bim2_ex4 input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 10px;
+}
+
+#modal_bim2_ex4 h2 {
+    width: 85%;
+    color: var(--color-powder-blue);
+    text-align: center;
+}
+
+#modal_bim2_ex4 div {
+    display: flex;
+    gap: 30px;
+}
+
+#bim2_ex4_see,
+#bim2_ex4_close {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid var(--color-powder-blue);
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    box-shadow: 6px 6px 10px 5px #000000b4;
+}
+
+#bim2_ex4_see:hover,
+#bim2_ex4_close:hover {
+    transition: 0.5s;
+    border-radius: 40px;
+}
+
+#bim2_ex4_close {
+    background-color: #740000d4;
+}
+
+#bim2_ex4_close:hover {
+    background-color: #da0000;
+}
+
+/* Exercicio 5 Bimestre 2 */
+#modal_bim2_ex5 {
+    position: fixed;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 90vh;
+    overflow-y: scroll;
+    z-index: 6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #000000b4;
+    padding: 20px;
+    background-color: var(--color-charcoal-gray);
+    gap: 30px;
+    transition: 0.5s;
+}
+
+#modal_bim2_ex5 input {
+    background-color: transparent;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px 5px #000000b4;
+    border: 3px solid var(--color-powder-blue);
+    text-align: end;
+    color: var(--color-powder-blue);
+    font-size: 25px;
+}
+
+#modal_bim2_ex5 input::-webkit-outer-spin-button,
+#modal_bim2_ex5 input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 10px;
+}
+
+#modal_bim2_ex5 h2 {
+    width: 85%;
+    color: var(--color-powder-blue);
+    text-align: center;
+}
+
+#modal_bim2_ex5 div {
+    display: flex;
+    gap: 30px;
+}
+
+#bim2_ex5_see,
+#bim2_ex5_close {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid var(--color-powder-blue);
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    box-shadow: 6px 6px 10px 5px #000000b4;
+}
+
+#bim2_ex5_see:hover,
+#bim2_ex5_close:hover {
+    transition: 0.5s;
+    border-radius: 40px;
+}
+
+#bim2_ex5_close {
+    background-color: #740000d4;
+}
+
+#bim2_ex5_close:hover {
     background-color: #da0000;
 }

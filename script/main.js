@@ -130,3 +130,63 @@ exercicio_5_bim1_open.addEventListener("click", () => {
     exercicio_5_bim1.style.opacity = "1";
     exercicio_5_bim1.style.display = "flex";
 });
+
+
+
+// 2° Bimestre
+
+// Exercicio 3
+
+const exercicio_3_bim2 = document.getElementById("modal_bim2_ex3");
+const exercicio_3_bim2_open = document.getElementById("atividade_3_bim_2");
+const exercicio_3_bim2_close = document.getElementById("bim2_ex3_close");
+
+exercicio_3_bim2_close.addEventListener("click", () => {
+    exercicio_3_bim2.style.opacity = "0";
+    setTimeout(() => {
+        exercicio_3_bim2.style.display = "none";
+    }, 1000);
+});
+
+exercicio_3_bim2_open.addEventListener("click", () => {
+    exercicio_3_bim2.style.opacity = "1";
+    exercicio_3_bim2.style.display = "flex";
+});
+
+
+
+// Exercicio 4
+
+const exercicio_4_bim2 = document.getElementById("modal_bim2_ex4");
+const exercicio_4_bim2_open = document.getElementById("atividade_4_bim_2");
+const exercicio_4_bim2_close = document.getElementById("bim2_ex4_close");
+
+exercicio_4_bim2_close.addEventListener("click", () => {
+    exercicio_4_bim2.style.opacity = "0";
+    setTimeout(() => {
+        exercicio_4_bim2.style.display = "none";
+    }, 1000);
+});
+
+exercicio_4_bim2_open.addEventListener("click", () => {
+    exercicio_4_bim2.style.opacity = "1";
+    exercicio_4_bim2.style.display = "flex";
+});
+
+// Exercicio 5
+
+const exercicio_5_bim2 = document.getElementById("modal_bim2_ex5");
+const exercicio_5_bim2_open = document.getElementById("atividade_5_bim_2");
+const exercicio_5_bim2_close = document.getElementById("bim2_ex5_close");
+
+exercicio_5_bim2_close.addEventListener("click", () => {
+    exercicio_5_bim2.style.opacity = "0";
+    setTimeout(() => {
+        exercicio_5_bim2.style.display = "none";
+    }, 1000);
+});
+
+exercicio_5_bim2_open.addEventListener("click", () => {
+    exercicio_5_bim2.style.opacity = "1";
+    exercicio_5_bim2.style.display = "flex";
+});
