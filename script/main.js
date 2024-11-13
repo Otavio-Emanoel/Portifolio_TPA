@@ -135,6 +135,46 @@ exercicio_5_bim1_open.addEventListener("click", () => {
 
 // 2° Bimestre
 
+// Exercicio 1
+
+const exercicio_1_bim2 = document.getElementById("modal_bim2_ex1")
+const exercicio_1_bim2_open = document.getElementById("atividade_1_bim_2")
+const exercicio_1_bim2_start = document.getElementById("bim2_ex1_see")
+const exercicio_1_bim2_close = document.getElementById("bim2_ex1_close")
+
+
+exercicio_1_bim2_start.addEventListener("click", () => {
+    let primos = [];
+    for (let numero = 2; numero <= 100; numero++) {
+        let ehPrimo = true;
+
+        for (let divisor = 2; divisor < numero; divisor++) {
+            if (numero % divisor === 0) {
+                ehPrimo = false;
+                break;
+            }
+        }
+
+        if (ehPrimo) {
+            primos.push(numero);
+        }
+    }
+    document.getElementById("bim2_ex1_res").innerHTML = primos.join(', ');
+})
+
+exercicio_1_bim2_close.addEventListener("click", () => {
+    exercicio_1_bim2.style.opacity = "0"
+    setTimeout(() => {
+        exercicio_1_bim2.style.display = "none"
+        document.getElementById("bim2_ex1_res").innerHTML = ""
+    }, 1000);
+})
+
+exercicio_1_bim2_open.addEventListener("click", () => {
+    exercicio_1_bim2.style.opacity = "1"
+    exercicio_1_bim2.style.display = "flex"
+})
+
 // Exercicio 3
 
 const exercicio_3_bim2 = document.getElementById("modal_bim2_ex3");
