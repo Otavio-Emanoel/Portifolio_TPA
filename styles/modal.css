@@ -35,6 +35,7 @@
     color: var(--color-powder-blue);
     font-size: 25px;
     margin: 10px 0;
+    padding-right: 10px;
 }
 
 #modal_bim1_ex1 input::-webkit-outer-spin-button,
@@ -307,6 +308,7 @@
     color: var(--color-powder-blue);
     font-size: 25px;
     margin: 10px 0;
+    padding-right: 10px;
 }
 
 #modal_bim2_ex1 input::-webkit-outer-spin-button,
@@ -565,6 +567,11 @@
     text-align: end;
     color: var(--color-powder-blue);
     font-size: 25px;
+}
+
+#modal_bim2_ex5 img{
+    width: 800px;
+    height: auto;
 }
 
 #modal_bim2_ex5 input::-webkit-outer-spin-button,

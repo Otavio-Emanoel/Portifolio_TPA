@@ -175,6 +175,35 @@ exercicio_1_bim2_open.addEventListener("click", () => {
     exercicio_1_bim2.style.display = "flex"
 })
 
+// Exercicio 2
+
+const exercicio_2_bim2 = document.getElementById("modal_bim2_ex2")
+const exercicio_2_bim2_open = document.getElementById("atividade_2_bim_2")
+const exercicio_2_bim2_start = document.getElementById("bim2_ex2_see")
+const exercicio_2_bim2_close = document.getElementById("bim2_ex2_close")
+
+exercicio_2_bim2_close.addEventListener("click", () => {
+    exercicio_2_bim2.style.opacity = "0"
+    setTimeout(() => {
+        exercicio_2_bim2.style.display = "none"
+        document.getElementById("bim2_ex2_res").innerHTML = ""
+    }, 1000);
+});
+
+exercicio_2_bim2_open.addEventListener("click", () => {
+    exercicio_2_bim2.style.opacity = "1"
+    exercicio_2_bim2.style.display = "flex"
+});
+
+exercicio_2_bim2_start.addEventListener('click', () => {
+    let num = Number(document.getElementById("bim2_ex2_input1").value);
+    let fatorial = 1;
+    for (let i = 1; i <= num; i++) {
+        fatorial *= i;
+    }
+    document.getElementById("bim2_ex2_res").innerHTML = `${fatorial}`
+});
+
 // Exercicio 3
 
 const exercicio_3_bim2 = document.getElementById("modal_bim2_ex3");
