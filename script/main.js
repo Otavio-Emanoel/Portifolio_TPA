@@ -259,3 +259,176 @@ exercicio_5_bim2_open.addEventListener("click", () => {
     exercicio_5_bim2.style.opacity = "1";
     exercicio_5_bim2.style.display = "flex";
 });
+
+// Bimestre 3
+
+// Exercicio 1
+
+const exercicio_1_bim3 = document.getElementById("modal_bim3_ex1")
+const exercicio_1_bim3_open = document.getElementById("atividade_1_bim_3")
+const exercicio_1_bim3_start = document.getElementById("bim3_ex1_see")
+const exercicio_1_bim3_close = document.getElementById("bim3_ex1_close")
+
+
+exercicio_1_bim3_start.addEventListener("click", () => {
+    let numero1 = Number(document.getElementById("bim3_ex1_input1").value)
+    let numero2 = Number(document.getElementById("bim3_ex1_input2").value)
+    let numero3 = Number(document.getElementById("bim3_ex1_input3").value)
+    let numero4 = Number(document.getElementById("bim3_ex1_input4").value)
+    let numero5 = Number(document.getElementById("bim3_ex1_input5").value)
+    let numeros = [numero1, numero2, numero3, numero4, numero5]
+    let soma = 0
+    for (let repeticao = 0; repeticao < numeros.length; repeticao++) {
+        soma += numeros.at(repeticao)
+    }
+    document.getElementById("bim3_ex1_res").innerHTML = `${numero1} + ${numero2} + ${numero3} + ${numero4} + ${numero5} = ${soma}`
+})
+
+exercicio_1_bim3_close.addEventListener("click", () => {
+    exercicio_1_bim3.style.opacity = "0"
+    setTimeout(() => {
+        exercicio_1_bim3.style.display = "none"
+        document.getElementById("bim3_ex1_res").innerHTML = ""
+    }, 1000);
+})
+
+exercicio_1_bim3_open.addEventListener("click", () => {
+    exercicio_1_bim3.style.opacity = "1"
+    exercicio_1_bim3.style.display = "flex"
+})
+
+// Exercicio 2
+
+const exercicio_2_bim3 = document.getElementById("modal_bim3_ex2")
+const exercicio_2_bim3_open = document.getElementById("atividade_2_bim_3")
+const exercicio_2_bim3_start = document.getElementById("bim3_ex2_see")
+const exercicio_2_bim3_close = document.getElementById("bim3_ex2_close")
+
+exercicio_2_bim3_close.addEventListener("click", () => {
+    exercicio_2_bim3.style.opacity = "0"
+    setTimeout(() => {
+        exercicio_2_bim3.style.display = "none"
+        document.getElementById("bim2_ex2_res").innerHTML = ""
+    }, 1000);
+});
+
+exercicio_2_bim3_open.addEventListener("click", () => {
+    exercicio_2_bim3.style.opacity = "1"
+    exercicio_2_bim3.style.display = "flex"
+});
+
+exercicio_2_bim3_start.addEventListener('click', () => {
+    let palavra1 = document.getElementById("bim3_ex2_input1").value
+    let palavra2 = document.getElementById("bim3_ex2_input2").value
+    let palavra3 = document.getElementById("bim3_ex2_input3").value
+    let palavra4 = document.getElementById("bim3_ex2_input4").value
+    let palavras = [palavra1, palavra2, palavra3, palavra4]
+    palavras.sort()
+    let resultado = document.getElementById("bim3_ex2_res")
+    resultado.innerHTML = ""
+    for (let repeticao = 0; repeticao < palavras.length; repeticao++) {
+        resultado.innerHTML += `${palavras.at(repeticao)}; `
+    }
+});
+
+// Exercicio 3
+
+const exercicio_3_bim3 = document.getElementById("modal_bim3_ex3");
+const exercicio_3_bim3_open = document.getElementById("atividade_3_bim_3");
+const exercicio_3_bim3_close = document.getElementById("bim3_ex3_close");
+const exercicio_3_bim3_start = document.getElementById("bim3_ex3_see")
+
+exercicio_3_bim3_close.addEventListener("click", () => {
+    exercicio_3_bim3.style.opacity = "0";
+    setTimeout(() => {
+        exercicio_3_bim3.style.display = "none";
+    }, 1000);
+});
+
+exercicio_3_bim3_open.addEventListener("click", () => {
+    exercicio_3_bim3.style.opacity = "1";
+    exercicio_3_bim3.style.display = "flex";
+});
+
+exercicio_3_bim3_start.addEventListener("click", () => {
+    let numero1 = Number(document.getElementById("bim3_ex3_input1").value)
+    let numero2 = Number(document.getElementById("bim3_ex3_input2").value)
+    let numero3 = Number(document.getElementById("bim3_ex3_input3").value)
+    let numero4 = Number(document.getElementById("bim3_ex3_input4").value)
+    let numero5 = Number(document.getElementById("bim3_ex3_input5").value)
+    let numeros = [numero1, numero2, numero3, numero4, numero5]
+    document.getElementById("bim3_ex3_res").innerHTML = ""
+    numeros.sort((a, b) => b - a)
+    for (let repeticao = 0; repeticao < numeros.length; repeticao++) {
+        document.getElementById("bim3_ex3_res").innerHTML += `${numeros.at(repeticao)}; `
+    }
+})
+
+// Exercicio 4
+
+const exercicio_4_bim3 = document.getElementById("modal_bim3_ex4");
+const exercicio_4_bim3_open = document.getElementById("atividade_4_bim_3");
+const exercicio_4_bim3_close = document.getElementById("bim3_ex4_close");
+const exercicio_4_bim3_start = document.getElementById("bim3_ex4_see")
+
+exercicio_4_bim3_close.addEventListener("click", () => {
+    exercicio_4_bim3.style.opacity = "0";
+    setTimeout(() => {
+        exercicio_4_bim3.style.display = "none";
+    }, 1000);
+});
+
+exercicio_4_bim3_open.addEventListener("click", () => {
+    exercicio_4_bim3.style.opacity = "1";
+    exercicio_4_bim3.style.display = "flex";
+});
+
+exercicio_4_bim3_start.addEventListener("click", () => {
+    let palavra1 = document.getElementById("bim3_ex4_input1").value;
+    let palavra2 = document.getElementById("bim3_ex4_input2").value;
+    let palavra3 = document.getElementById("bim3_ex4_input3").value;
+    let palavra4 = document.getElementById("bim3_ex4_input4").value;
+    let palavra5 = document.getElementById("bim3_ex4_input5").value;
+    let palavras = [palavra1, palavra2, palavra3, palavra4, palavra5]
+    let maiorPalavra = palavras.at(0)
+    for (let i = 1; i < palavras.length; i++) {
+        if (palavras.at(i).length > maiorPalavra.length) {
+            maiorPalavra = palavras.at(i)
+        }
+    }
+    document.getElementById("bim3_ex4_res").innerHTML = `A palavra '${maiorPalavra}' tem ${maiorPalavra.length} caracteres.`
+})
+
+// Exercicio 5
+
+const exercicio_5_bim3 = document.getElementById("modal_bim3_ex5");
+const exercicio_5_bim3_open = document.getElementById("atividade_5_bim_3");
+const exercicio_5_bim3_close = document.getElementById("bim3_ex5_close");
+const exercicio_5_bim3_start = document.getElementById("bim3_ex5_see")
+
+exercicio_5_bim3_close.addEventListener("click", () => {
+    exercicio_5_bim3.style.opacity = "0";
+    setTimeout(() => {
+        exercicio_5_bim3.style.display = "none";
+    }, 1000);
+});
+
+exercicio_5_bim3_open.addEventListener("click", () => {
+    exercicio_5_bim3.style.opacity = "1";
+    exercicio_5_bim3.style.display = "flex";
+});
+
+exercicio_5_bim3_start.addEventListener("click", () => {
+    document.getElementById("bim3_ex5_res").innerHTML = ` Base Curricular: <br> `
+    let base_curricular = []
+    base_curricular.push("Língua Portuguesa", "Língua Inglesa", "Arte", "Educação Fisica", "Matemática", "Física", "Química", "Biologia", "História", "Geografia", "Filosofia", "Sociologia")
+    for (let i = 0; i < base_curricular.length; i++) {
+        document.getElementById("bim3_ex5_res").innerHTML += base_curricular.at(i) + "<br>"
+    }
+    document.getElementById("bim3_ex5_res").innerHTML += `<br> Base Tecnica: <br>`
+    let base_tecnica = []
+    base_tecnica.push("Programação Web", "APS", "Design Digital", "Fundamentos da Informatica", "TPA", "Banco de Dados")
+    for (let i = 0; i < base_tecnica.length; i++) {
+        document.getElementById("bim3_ex5_res").innerHTML += base_tecnica.at(i) + "<br>"
+    }
+})
